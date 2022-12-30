@@ -1,0 +1,12 @@
+<h2>Formulario de registro!</h2>
+<!-- formulario reactivo basico -->
+<form [formGroup]="loginForm">
+    <!-- previsualizacion del form -->
+    <h4>Ingrese su datos de registro</h4>
+    <!-- usaremos un pipe de angular de tipo json para pasar el objeto a un json y mostrarlo -->
+    <p>{{ loginForm.value | json}}</p>
+    <!-- campos del form -->
+    <mat-form-field>
+        <input matInput placeholder="Nombre" formControlName="name">
+    </mat-form-field>
+</form>
